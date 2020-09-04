@@ -33,5 +33,4 @@ public class Ball {
     public String toString(){
         return "This " + color + " ball is " + size + " in size scale.";
     }
-
 }

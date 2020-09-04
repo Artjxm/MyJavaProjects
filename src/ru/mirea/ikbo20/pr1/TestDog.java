@@ -14,6 +14,5 @@ public class TestDog {
         d1.toHumanAge();
         d2.toHumanAge();
         d3.toHumanAge();
-
     }
 }
