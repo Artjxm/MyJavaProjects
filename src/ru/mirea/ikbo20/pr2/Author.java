@@ -44,4 +44,5 @@ public class Author {
     public String toString() {
         return name + " is a " + genderName + " and may be contacted via " + email;
     }
+
 }

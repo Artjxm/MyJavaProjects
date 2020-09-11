@@ -7,4 +7,5 @@ public class TestBall {
         ball1.move(30, 15);
         System.out.println(ball1);
     }
+
 }

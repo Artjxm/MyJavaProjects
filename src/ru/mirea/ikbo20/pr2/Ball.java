@@ -36,4 +36,5 @@ public class Ball {
     public String toString() {
         return "Ball @ (" + this.x + ", " + this.y + ").";
     }
+
 }
