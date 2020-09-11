@@ -8,11 +8,21 @@ public class Author {
         this.name = name;
         this.email = email;
         this.gender = gender;
+
+        if (gender == 'm')
+            genderName = "male";
+        else if (gender == 'f')
+            genderName = "female";
     }
 
     public Author(String name, char gender) {
         this.name = name;
         this.gender = gender;
+
+        if (gender == 'm')
+            genderName = "male";
+        else if (gender == 'f')
+            genderName = "female";
     }
 
     public String getName() {
@@ -31,15 +41,7 @@ public class Author {
         this.email = email;
     }
 
-    public void setGenderName(char gender) {
-        if (gender == 'm')
-            genderName = "male";
-        else if (gender == 'f')
-            genderName = "female";
-    }
-
     public String toString() {
-        setGenderName(gender);
-        return name + " is a " + genderName + " and may be contacted wia " + email;
+        return name + " is a " + genderName + " and may be contacted via " + email;
     }
 }
