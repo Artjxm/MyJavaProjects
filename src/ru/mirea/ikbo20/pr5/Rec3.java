@@ -2,21 +2,19 @@ package ru.mirea.ikbo20.pr5;
 
 import java.util.Scanner;
 
-// Задание 14
+// Задание 14 (слева направо)
 public class Rec3 {
-    public static int recursion(int num) {
+    public static String recursion(int num) {
         if (num < 10)
-            System.out.print(num);
+            return Integer.toString(num);
         else {
-            System.out.print(num % 10 + " ");
-            return recursion(num / 10);
+            return recursion(num / 10) + ' ' + num % 10;
         }
-        return 0;
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
-        recursion(num);
+        System.out.println(recursion(num));
     }
 }
