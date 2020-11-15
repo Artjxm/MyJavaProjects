@@ -9,6 +9,10 @@ class Student {
         return gpa;
     }
 
+    public void setGpa(int gpa) {
+        this.gpa = gpa;
+    }
+
     @Override
     public String toString() {
         return
