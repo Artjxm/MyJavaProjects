@@ -1,15 +1,14 @@
 package ru.mirea.ikbo20.pr7;
-
 import java.util.*;
+
 public class QueueResolution {
-    //-----------------------------------------Задание 2
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String[] pullFirst, pullSecond;
         do{
-            System.out.println("Введите 5 разных крат для первого игрока");
+            System.out.println("Введите 5 разных карт для первого игрока");
             pullFirst = scanner.nextLine().split(" ");
-            System.out.println("Введите 5 разных крат для второго игрока");
+            System.out.println("Введите 5 разных карт для второго игрока");
             pullSecond = scanner.nextLine().split(" ");
         }while(!isCorrect(pullFirst, pullSecond));
 
